@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1 id="mensagem"></h1>
+                    <p id="dica" class="texto__paragrafo">Dica: </p>
+                </div>
+                    <div id="exibicao-palavra"></div>
+                <input type="text" id="entrada-letra" placeholder="Chute uma letra" maxlength="1">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" id="btn-chutar" class="container__botao">Chutar</button>
+                    <button onclick="reiniciarJogo()" id="botao-reiniciar" class="container__botao">Novo jogo</button>
+                </div>
+                <div>
+                    <h2>Letras Chutadas:</h2>
+                    <div id="letras-chutadas"></div>
+                </div>
+            </div>
+            <img id="imagem" src="./img/forca0.png" alt="jogo da forca" class="container__forca" />
+        </div>
+    </div>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
